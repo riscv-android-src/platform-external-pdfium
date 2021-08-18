@@ -51,6 +51,13 @@ cc_library_static {
                 "-DARCH_CPU_X86_64",
             ],
         },
+        riscv64: {
+            cflags: [
+                "-DARCH_CPU_64_BITS",
+                "-DARCH_CPU_RISCV64",
+                "-DARCH_CPU_RISCV_FAMILY",
+            ],
+        },
     },
 
     srcs: [
